@@ -7,11 +7,10 @@ function NotFound() {
   );
 }
 
-export default {
-  component: NotFound,
-  getStaticProps: async () => {
-    return {
-      props: {}, // will be passed to the page component as props
-    };
-  },
-};
+export default NotFound;
+
+export async function getStaticProps() {
+  return {
+    props: {}, // will be passed to the page component as props
+  };
+}
